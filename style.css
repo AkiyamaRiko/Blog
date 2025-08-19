@@ -1,3 +1,11 @@
 h3 {
   color: #44426d;
 }
+.rst-content pre code {
+    white-space: pre;
+    word-wrap: normal;
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
