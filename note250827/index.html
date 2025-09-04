@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../blog250801/">
+        <link rel="prev" href="../note250828/">
       
+      
+        <link rel="next" href="../note250826/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>测试标题 - Riko_Blog</title>
+        <title>页面布局实战与心得 - Riko_Blog</title>
       
     
     
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              测试标题
+              页面布局实战与心得
             
           </span>
         </div>
@@ -246,10 +248,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../note250903/" class="md-tabs__link">
           
   
@@ -266,12 +270,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../blog250801/" class="md-tabs__link">
           
   
@@ -370,24 +372,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -400,7 +407,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             学习笔记
@@ -503,10 +510,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../note250827/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    页面布局实战与心得
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -517,6 +546,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      页面布局的思路
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      布局方法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -648,29 +715,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -683,7 +745,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             技术博客
@@ -717,19 +779,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../blog250802/" class="md-nav__link">
         
   
   
@@ -740,7 +793,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -773,6 +825,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      页面布局的思路
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      布局方法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -787,7 +865,87 @@
 
 
 
-<h1 id="_1">测试标题</h1>
+<h1 id="_1">页面布局实战与心得</h1>
+<h2 id="_2">页面布局的思路</h2>
+<ul>
+<li>确定版心：一般是1200px宽，居中。可以设置一个类，专门用来做版心。</li>
+<li>分析页面的行模块、以及每行的列模块。</li>
+<li>制作HTML的结构。</li>
+<li>CSS书写顺序：布局与定位、自身属性（长宽高、内外边距）、文本属性、其他属性。</li>
+</ul>
+<h2 id="_3">布局方法</h2>
+<p>(让AI帮忙整理)</p>
+<pre><code class="language-css">/* 基础样式（移动端） */
+.container { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) {
+  .container { flex-direction: row; }
+}
+
+/* 大屏幕 */
+@media (min-width: 1024px) {
+  .container { 
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+</code></pre>
+<p>制作一个复杂的页面的时候，可以给页面的各个部分分别创建Container，然后根据实际情况使用不一样的布局方式。例如：</p>
+<ul>
+<li>
+<p>Header和导航栏使用Flex，水平排列。</p>
+</li>
+<li>
+<p>主体内容用grid。</p>
+</li>
+<li>
+<p>页脚用flex。</p>
+</li>
+</ul>
+<p>（AI给的例子）</p>
+<pre><code class="language-css">/* 默认样式（移动端优先） */
+.nav-container {
+  display: flex;
+  flex-direction: column; /* 手机端：垂直堆叠 */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 手机端：单列 */
+  gap: 1rem;
+}
+
+/* 平板尺寸 */
+@media (min-width: 768px) {
+  .nav-container {
+    flex-direction: row; /* 平板端：水平排列 */
+    justify-content: space-between;
+  }
+
+  .main-container {
+    grid-template-columns: repeat(2, 1fr); /* 平板端：2列 */
+  }
+}
+
+/* 桌面尺寸 */
+@media (min-width: 1024px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr); /* 桌面端：3列 */
+  }
+
+  .site-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* 侧边栏+主内容 */
+  }
+}
+</code></pre>
+<blockquote>
+<p>这一页会持续更新。</p>
+</blockquote>
 
 
 

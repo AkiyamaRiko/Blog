@@ -60,7 +60,7 @@ pre[class*=language-] {
 .token.property,
 .token.symbol,
 .token.tag {
-    color: #fc8bb5
+    color: #8bb1fc
 }
 
 .token.boolean,
