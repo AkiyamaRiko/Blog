@@ -1,0 +1,2650 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../CSS/">
+      
+      
+        <link rel="next" href="../Vue3/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>JavaScript - Riko_Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/style.css">
+    
+      <link rel="stylesheet" href="../css/1.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#javascript" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Riko_Blog" class="md-header__button md-logo" aria-label="Riko_Blog" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riko_Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JavaScript
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于我
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../HTML/" class="md-tabs__link">
+          
+  
+  
+  学习笔记
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blog250801/" class="md-tabs__link">
+          
+  
+  
+  小项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../note2509102/" class="md-tabs__link">
+          
+  
+  
+  随想
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Riko_Blog" class="md-nav__button md-logo" aria-label="Riko_Blog" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Riko_Blog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于我
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    学习笔记
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            学习笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      输入输出语句
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      变量的数据类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译与解释
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      标识符、关键字、保留字
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      流程控制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    <span class="md-ellipsis">
+      数组(Array)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#letconstai" class="md-nav__link">
+    <span class="md-ellipsis">
+      let和const（来自AI）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      作用域链
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      预解析
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      箭头函数 =&gt; (来自AI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object" class="md-nav__link">
+    <span class="md-ellipsis">
+      对象（Object）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      内置对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_64" class="md-nav__link">
+    <span class="md-ellipsis">
+      事件
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vue3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vue3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    小项目
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            小项目
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog250801/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CommentsTool/抖音评论整理工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog250802/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    测试标题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    随想
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            随想
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note2509102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025年的目标
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note250913/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h1>
+<h2 id="_1">输入输出语句<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre><code class="language-javascript">alert(msg);
+//浏览器弹出警示框
+console.log(msg);
+//浏览器控制台打印输出信息
+prompt(info);
+//浏览器弹出输入框，让用户输入
+</code></pre>
+<h3 id="_2">变量<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>变量是存放数据的容器。</p>
+<h3 id="_3">声明和赋值<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<pre><code class="language-js">var x; //声明一个名称为x的变量
+x = 10 ;//赋值
+var x = 10,y = 'DABCABC' ;//也可以声明变量的同时直接赋值,用逗号隔开
+//变量可以是字符串（？
+console.log(x);//在控制台输出（一般是测试用的，只有程序员能看见）
+</code></pre>
+<h2 id="_4">变量的数据类型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>JS的数据变量类型是赋值的时候才确定的，并且类型可以变化。</p>
+<ul>
+<li>
+<p>简单数据类型：Number（包括整数和小数）、Boolean（布尔型，如true、false）、String（字符串）、Undefined（未定义）、Null（空值）。</p>
+</li>
+<li>
+<p>复杂数字类型：Object等。</p>
+</li>
+</ul>
+<h3 id="_5">数字型<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>八进制</li>
+</ul>
+<pre><code class="language-js">var num = 010 ;//在数字前面加个0表示8进制
+console.log(num) ;
+//这时候会输出十进制结果，也就是8
+</code></pre>
+<ul>
+<li>十六进制</li>
+</ul>
+<pre><code class="language-js">var num = 0x9 ;//数字前面加0x表示十六进制
+//这时候运行console.log也会输出十进制结果
+</code></pre>
+<ul>
+<li>数字型的范围：</li>
+</ul>
+<p>最大值是1.79e＋308，最小是5e-32</p>
+<ul>
+<li>三个特殊值：正负infinity和NaN（Not a number）</li>
+</ul>
+<p>判断一个值是否为数字：</p>
+<pre><code class="language-js">isNaN(x) ;//用来判断变量是不是数字，如果是，返回false
+//如果不是，返回true
+console.log(isNaN(x));
+</code></pre>
+<h3 id="_6">字符串<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>字符串需要写在引号内，用单引号或双引号都可以，在html中建议用单引号。</p>
+<pre><code class="language-js">var str1 = '我喜欢玩Arcaea';
+var str2 = '我喜欢玩\n Arcaea';//用转义字符可以换行
+</code></pre>
+<ul>
+<li>长度（length）</li>
+</ul>
+<pre><code class="language-js">var str = 'my name is riko';
+console.log(str.length); //15
+</code></pre>
+<ul>
+<li>拼接：字符串+另一个字符串/数字/布尔值，会得到一个拼接的字符串。</li>
+</ul>
+<pre><code class="language-js">var age = 18;
+console.log('您今年' + age + '岁了');
+//会得到“您今年18岁了”的字符串
+
+
+var age = prompt('请输入您的年龄');
+//此时会出现弹窗，让用户输入值
+//然后会把用户输入的值赋值给变量
+
+console.log('您今年' + age + '岁了');
+//会得到“您今年__岁了”的字符串(取决于刚才输入的值)
+
+
+alert('您今年' + age + '岁了');
+//会出现相应的弹窗
+</code></pre>
+<h3 id="_7">布尔值<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>参与加法运算时，true视为1，false视为0</p>
+<pre><code class="language-js">var flag = true;
+console.log(flag+1); //会得到2
+</code></pre>
+<h3 id="_8">其他<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>如果变量声明了但没有赋值：Undefined，但可以和字符串相加，得到拼接的字符串。</p>
+</li>
+<li>
+<p>NaN、Undefined和数字相加，结果是NaN。</p>
+</li>
+<li>
+<p>Null和字符串相加，得到拼接的字符串。</p>
+</li>
+<li>
+<p>Null和数字相加，Null相当于0。</p>
+</li>
+</ul>
+<h3 id="typeof">判断变量的数据类型：typeof<a class="headerlink" href="#typeof" title="Permanent link">&para;</a></h3>
+<p>例：</p>
+<pre><code class="language-js">var num = 10;
+console.log(typeof num);
+// number
+var str = '10';
+console.log(typeof str);
+// string
+var timer = null
+console.log(typeof timer);
+// object
+</code></pre>
+<ul>
+<li>
+<p>通过表单、prompt取过来的值会变成字符型。</p>
+</li>
+<li>
+<p>可以通过控制台输出的字体颜色来判断（字符串会显示为黑色）</p>
+</li>
+</ul>
+<h3 id="_9">变量转换类型<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>转换为字符串：</p>
+<pre><code class="language-js">var num = 1;
+alert(num.toString());
+var num = 1;
+alert(String(num));
+// 转换成字符串的两种方式
+
+var num = 1;
+alert(num+'我是字符串');
+// 和字符串拼接可以得到字符串
+</code></pre>
+<p>转换为数字型：</p>
+<pre><code class="language-js">var num = prompt('请输入一个数');
+console.log(num);
+// 会得到字符串
+
+var num = prompt('请输入一个数');
+console.log(parseInt(num)); // I要大写
+// 会得到整数，如果输入的是小数的话会取整
+console.log(parseFloat(num)); 
+// 会得到浮点数
+
+console.log(parseInt(120px));
+// 120
+
+console.log(parseInt(rem120px));
+// NaN，因为会先识别到rem
+var str = '123'
+console.log(Number(str));
+// 数字型的123
+</code></pre>
+<blockquote>
+<p>这里其实跟Python差不多，所以不细说了 。</p>
+</blockquote>
+<p>转换为布尔值：</p>
+<p>Boolean()函数转换的规律：代表空、否定的值会转换为false，例如0、NaN、null、undefined，其他会转换为true。</p>
+<h2 id="_10">编译与解释<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>计算机只能理解机器语言。程序语言翻译成机器语言的工具称为翻译器。</p>
+</li>
+<li>
+<p>编译与解释的区别在于翻译的时间点不同。</p>
+</li>
+<li>
+<p><strong>编译器</strong>是在代码执行之前编译，生成中间代码文件。例如JAVA</p>
+</li>
+<li>
+<p><strong>解释器</strong>是在运行时进行即时解释，并立即执行。例如JS</p>
+</li>
+</ul>
+<h2 id="_11">标识符、关键字、保留字<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>标识符：开发人员为变量、属性、函数、参数起的名字。<strong>标识符不能是关键字和保留字。</strong></p>
+</li>
+<li>
+<p>关键字：在语法中已经有特殊含义的单词。</p>
+</li>
+<li>
+<p>保留字：预留的关键字。</p>
+</li>
+</ul>
+<h2 id="_12">运算符<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>用来实现赋值、比较、执行算术运算等功能的符号。</p>
+<h3 id="_13">算术运算符<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>加减乘除</p>
+</li>
+<li>
+<p>% 取余数（返回除法的余数）例如 9 % 2 = 1</p>
+</li>
+<li>
+<p>避开浮点数运算，会有误差</p>
+</li>
+</ul>
+<h3 id="_14">表达式和返回值<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>表达式是由数字、变量、运算符组成的式子。</p>
+</li>
+<li>
+<p>表达式最终都会有一个结果返回，称为返回值。</p>
+</li>
+</ul>
+<h3 id="_15">递增和递减运算<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>用于反复给数字变量+1或-1</p>
+<pre><code class="language-js">// 前置自增：先加1再返回值
+var num = 10;
+++ num; // 类似于num = num + 1
+console.log(num); // 11
+
+// 后置自增：先返回原值再加1
+var num = 10;
+num ++; // 类似于num = num + 1
+console.log(num); // 10
+console.log(num); // 11
+</code></pre>
+<h3 id="_16">比较运算<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>比较两个数据，然后返回布尔值。（使用==时会把字符串数据转换为数字型）</p>
+<h3 id="_17">逻辑运算符<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>&amp;&amp; 与(and)</p>
+</li>
+<li>
+<p>|| 或(or)</p>
+</li>
+<li>
+<p>！非(not)</p>
+</li>
+<li>
+<p>&amp;&amp; 比 || 的权重高</p>
+</li>
+</ul>
+<pre><code class="language-js">console.log(3 &gt; 5 &amp;&amp; 3 &gt; 2); // false
+colsole.log(3 &gt; 5 &amp;&amp; 3 &gt; 2); // true
+console.log(!true); // false
+</code></pre>
+<ul>
+<li>逻辑中断（短路）：当有多个表达式参与逻辑运算时，如果左边的表达式可以确定结果，就不再运算右边。</li>
+</ul>
+<pre><code class="language-js">console.log(123 &amp;&amp; 456); // 456
+console.log(0 &amp;&amp; 456); // 0
+// 表达式1 &amp;&amp; 表达式2
+// 如果表达式1为真，则返回表达式2
+// 如果表达式1为假，则返回表达式1
+// 从左开始，如果是真，就继续往下运算直到最后一个，返回最后一个值
+// 如果是假，就返回当前的值
+</code></pre>
+<pre><code class="language-js">console.log(123 || 456); // 123
+console.log(0 || 456); //456
+// 表达式1 || 表达式2
+// 如果表达式1为假，则返回表达式2
+// 如果表达式1为真，则返回表达式1
+// 从左开始，如果是假，就继续往下运算直到最后一个，返回最后一个值
+// 如果是真，就返回当前的值
+</code></pre>
+<h3 id="_18">赋值运算符<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>= 直接赋值</p>
+</li>
+<li>
+<p>+= -= 加/减一个数以后再赋值</p>
+</li>
+<li>
+<p>*= /= %= 乘、除、取模以后再赋值</p>
+</li>
+</ul>
+<pre><code class="language-js">var num = 10;
+num += 2; // 相当于num = num + 2
+console.log(num); // 12
+</code></pre>
+<h2 id="_19">流程控制<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<p>简单来说：控制代码按照什么样的结构顺序执行</p>
+<h3 id="if">分支流程、if语句<a class="headerlink" href="#if" title="Permanent link">&para;</a></h3>
+<p>if语句的语法结构：</p>
+<pre><code class="language-js">if ('条件表达式'){
+    // 执行语句
+}
+</code></pre>
+<p>执行思路：如果条件表达式结果为true，则执行；如果条件表达式为false，则跳过大括号里的语句，执行if语句后面的代码。</p>
+<pre><code class="language-js">var age = prompt('输入你的年龄')
+if (age &gt;= 18){
+    alert('你成年了')
+} else {
+    alert('你打游戏有防沉迷')
+}
+</code></pre>
+<p>多分支语句（多选一操作）：</p>
+<pre><code class="language-js">if ('条件表达式') {
+    // 语句1
+} else if('条件2'){
+    // 语句2
+} else if('条件3'){
+    // 语句3
+} else ('条件4'){
+    // 最后的语句
+}
+</code></pre>
+<p>执行思路：如果满足条件1，就执行语句1，然后退出整个if；如果不满足条件1，则判断是否满足条件2……</p>
+<ol>
+<li>
+<p>只有一个语句能执行。</p>
+</li>
+<li>
+<p>else if里的条件理论上可以任意多个。</p>
+</li>
+</ol>
+<h3 id="_20">三元表达式<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>有三元运算符 ？和 ：组成的式子为三元表达式。</p>
+<p>语法结构：</p>
+<pre><code class="language-js">'条件表达式'? '表达式1':'表达式2'
+</code></pre>
+<p>执行思路：</p>
+<p>如果条件表达式结果为真，返回式1的值；如果条件表达式结果为假，返回式2的值。</p>
+<pre><code class="language-js">var result = ptt &gt; 12 ? '很强':'有点菜'; // 等价于if语句
+console.log(result);
+alert(result);
+</code></pre>
+<h3 id="switch">switch语句<a class="headerlink" href="#switch" title="Permanent link">&para;</a></h3>
+<p>当要针对变量设置一系列<strong>特定值</strong>的选项时，就可以使用switch语句。</p>
+<p>语法结构：</p>
+<pre><code class="language-js">switch('表达式'){
+    case value1:
+         执行语句1；
+         break； 
+    case value2:
+         执行语句2；
+         break；
+    default:
+         执行最后的语句; 
+}
+</code></pre>
+<p>执行思路：把表达式的值与case后面的value进行匹配，如果匹配上了，就执行对应的语句，然后退出switch（每一个case最后一定要加上break）如果都没有匹配上，就执行default里的语句。</p>
+<p>注意：<strong>匹配时必须是全等，值和数据类型都一致</strong></p>
+<pre><code class="language-js">switch (2) {
+    case 1:
+        console.log('这是1');
+        break;
+    case 2:
+        console.log('这是2');
+        break;
+    default:
+        console.log('啥也不是');
+}
+</code></pre>
+<h3 id="_21">循环结构<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>使某些代码重复执行，完成规律性的重复操作。</p>
+<p>一组被重复执行的语句称为循环体，而能否继续重复，取决于循环的终止条件。</p>
+<h3 id="for">for循环语句<a class="headerlink" href="#for" title="Permanent link">&para;</a></h3>
+<p>语法结构：</p>
+<pre><code class="language-js">for(初始化变量 ; 条件表达式 ; 操作表达式){
+    // 循环体
+}
+</code></pre>
+<ul>
+<li>
+<p>初始化变量：一个普通变量，通常作为计数器使用。</p>
+</li>
+<li>
+<p>条件表达式：用来决定每一次循环是否执行。</p>
+</li>
+<li>
+<p>操作表达式：每次循环最后执行的代码，经常用于计数器变量（递增或递减）</p>
+</li>
+</ul>
+<p>执行思路（顺序）：初始化变量→条件表达式→循环体→操作表达式。</p>
+<p>例：</p>
+<pre><code class="language-js">const prompt = require('prompt-sync')();
+var num = prompt('请输入人数：');
+var sum = 0;
+var ave = 0;
+for (var i = 1; i &lt;= num; i++) {
+    var score = parseInt(prompt('请输入第' + i + '个人的分数'));
+    // 注意一定要转换类型，因为从prompt获取的值是字符串。
+    sum = sum + score;
+}
+ave = parseInt(sum / num);
+console.log('平均分数是' + ave);
+</code></pre>
+<h3 id="_22">断点调试<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>在程序的某一行设置一个断点（vscode里直接单击行号前面的小红点，浏览器按F12进入source以后操作）调试时，程序会在断点处停止。</p>
+<p>在浏览器的调试功能里按F11还可以让程序一步一步执行，并且可以点击watch，观察变量的值的变化。</p>
+<h3 id="for_1">双重for循环<a class="headerlink" href="#for_1" title="Permanent link">&para;</a></h3>
+<p>语法结构：</p>
+<pre><code class="language-js">for(初始化变量 ; 条件表达式 ; 操作表达式){ //外层
+    for(初始化变量 ; 条件表达式 ; 操作表达式){ //里层
+       // 循环体
+    }
+}
+</code></pre>
+<p>执行思路：可以把里面的循环看作是外面循环的语句，外层执行一次，里层执行全部</p>
+<p>例：</p>
+<pre><code class="language-js">for (var i = 1; i &lt;= 3; i++){
+    console.log('这是外层，第' + i + '次');
+    for (var j = 1; j &lt;= 3; j++){
+        console.log(' - 这是内层，第' + j + '次');
+    }
+}
+</code></pre>
+<p>输出结果：</p>
+<pre><code>这是外层，第1次
+ - 这是内层，第1次
+ - 这是内层，第2次
+ - 这是内层，第3次
+这是外层，第2次
+ - 这是内层，第1次
+ - 这是内层，第2次
+ - 这是内层，第3次
+这是外层，第3次
+ - 这是内层，第1次
+ - 这是内层，第2次
+ - 这是内层，第3次
+</code></pre>
+<blockquote>
+<p>tips：分析比写代码更重要，如果核心算法想不到的话，就先分析它的执行过程。</p>
+</blockquote>
+<h3 id="while">while语句<a class="headerlink" href="#while" title="Permanent link">&para;</a></h3>
+<p>语法结构：</p>
+<pre><code class="language-js">while (条件表达式){
+    // 循环体
+}
+</code></pre>
+<p>执行思路：当条件表达式结果为true时，则执行循环体，否则退出循环。</p>
+<pre><code class="language-js">var num = 1;
+while (num &lt;= 100){
+    console.log('hello');
+    num++;
+}
+</code></pre>
+<p>和for循环语句一样需要有计数器和操作表达式，防止变成无限循环把电脑卡死。</p>
+<h3 id="do-while">do while 语句<a class="headerlink" href="#do-while" title="Permanent link">&para;</a></h3>
+<p>语法结构：</p>
+<pre><code class="language-js">do {
+    // 循环体
+} while (条件表达式)
+</code></pre>
+<p>执行思路：与while语句不同之处在于：先执行一遍再判断条件。</p>
+<p>(也就是说，无论如何都会至少执行一次循环体代码。)</p>
+<pre><code class="language-js">var i = 1;
+do {
+    console.log('hello');
+    i++;
+} while (i &lt;= 100)
+</code></pre>
+<h3 id="continue-break">continue 和 break<a class="headerlink" href="#continue-break" title="Permanent link">&para;</a></h3>
+<ul>
+<li>continue 用于<strong>立即跳出</strong>本次循环，进入下一次循环。</li>
+<li>break用于让循环<strong>直接结束</strong>。</li>
+</ul>
+<h2 id="array">数组(Array)<a class="headerlink" href="#array" title="Permanent link">&para;</a></h2>
+<ul>
+<li>一组数据的集合，用于把一组数据存储在单个变量名下。</li>
+</ul>
+<p><code>var array = [1,2,3,4,5];</code></p>
+<ul>
+<li>
+<p>利用new创建：<code>var arr = new Array();</code></p>
+</li>
+<li>
+<p>利用数组字面量创建：<code>var arr = [];</code></p>
+</li>
+<li>
+<p>任意数据类型都可以放进数组，数据之间用逗号隔开。</p>
+</li>
+<li>
+<p>声明数组并赋值，称为数组的初始化。</p>
+</li>
+</ul>
+<blockquote>
+<p>这边也跟python差不多，笔记会写得偷懒点</p>
+</blockquote>
+<h3 id="_23">遍历数组<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>取出数组里所有的元素，可以通过循环的方式。</p>
+<pre><code class="language-js">var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+for (var i = 0; i &lt; 8; i++){
+    console.log(arr[i]) // 注意索引号从0开始
+}
+</code></pre>
+<p>使用<code>arr.length</code>可以访问数组的长度。</p>
+<p>例：找出数组里的最大值</p>
+<pre><code class="language-js">var arr = [1848, 2409, 6589, 7856, 2050, 5768, 2305];
+var max = arr[0];
+for (var i = 1; i &lt; arr.length; i++){
+    if (arr[i] &gt; max) {
+        max = arr[i];
+    }
+}
+console.log('最大值是 ' + max);
+</code></pre>
+<h3 id="_24">在数组中增加元素<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>通过修改数组的长度增加元素：</li>
+</ul>
+<p><code>js
+  var arr = [1, 2, 3, 4];
+  console.log(arr.length); // 4
+  arr.length = 5;
+  console.log(arr.length); // 5
+  console.log(arr[4]); //undefined (空的)</code></p>
+<ul>
+<li>直接在索引号上增加或修改：</li>
+</ul>
+<p><code>js
+  var arr = [1, 2, 3, 4];
+  arr[4] = 5;</code></p>
+<ul>
+<li>不能直接给数组名赋值，否则数组会消失。</li>
+</ul>
+<p>例1：把整数1-100放进数组</p>
+<pre><code class="language-js">var arr = [];
+for (var i = 0; i &lt;= 100; i++){
+    arr[i] = i;
+}
+console.log(arr);
+</code></pre>
+<p>例2：在数组中筛选值，放进另一个数组</p>
+<pre><code class="language-js">var arr = [2, 0, 15, 24, 5, 11, 8, 23, 4, 0, 39, 7];
+var newArr = [];
+var j = 0; // 新数组的索引号，要从0开始
+for (var i = 0; i &lt; arr.length; i++){
+    if (arr[i] &gt;= 10) {
+        newArr[j] = arr[i];
+        j++;
+    }
+}
+</code></pre>
+<h3 id="_25">冒泡排序算法<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>重复访问要排序的数组，一次比较2个元素，如果顺序错误，就交换这两个元素，重复直到没有再需要交换为止。</p>
+<p>用双层for循环，外层决定访问元素的次数，内层决定要交换元素的次数。</p>
+<pre><code class="language-js">var arr = [5, 4, 3, 2, 1];
+for (var i = 0; i &lt;= arr.length - 1; i++) {
+    for (var j = 0; j &lt;= arr.length - 1 - i; j++){
+        if (arr[j] &gt; arr[j + 1]) {
+            var temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+console.log(arr);
+</code></pre>
+<h2 id="_26">函数<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>这边也跟python很像，不多说了。</p>
+</blockquote>
+<ol>
+<li>
+<p>声明函数：<code>function 函数名( ) { 函数代码 }</code></p>
+</li>
+<li>
+<p>调用函数：<code>函数名 ( );</code></p>
+</li>
+</ol>
+<h3 id="_27">函数的参数<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>形式上的参数（声明时使用的参数） <code>function 函数名(a,b){ }</code>这里的a和b是形参。</p>
+</li>
+<li>
+<p>实际的参数：调用时填在括号里的是实参。</p>
+</li>
+</ol>
+<pre><code class="language-js">// 求任意两个数的和
+function getSum(num1, num2) {
+    console.log(num1 + num2);
+}
+getSum(1237, 2931);
+
+// 求任意两数之间的和
+function getSum1(start, end) {
+    var sum = 0
+    for (var i = start; i &lt;= end; i++){
+        sum += i;
+    }
+    console.log(sum);
+}
+getSum1(1237, 2931);
+</code></pre>
+<h3 id="return">函数的返回值 return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h3>
+<ul>
+<li>return语句：把函数的值返回给调用者 <code>return 需要返回的结果;</code></li>
+</ul>
+<p>例：利用函数求一个数组中的最大值</p>
+<pre><code class="language-js">function getArrMax(arr) {
+    var max = arr[0];
+    for (var i = 1; i &lt; arr.length; i++) {
+        if (arr[i] &gt; max) {
+            max = arr[i]
+        }
+    }
+    return max;
+}
+console.log(getArrMax([1, 34, 6, 2, 46, 52])); 
+// 52
+</code></pre>
+<p>实际开发中，经常用一个变量来接受函数的返回结果，使用更简单。如果没有return，这个函数的值就会显示为Undefined。</p>
+<pre><code class="language-js">var re = getArrMax([1, 34, 6, 2, 46, 52]);
+console.log(re);
+</code></pre>
+<p>return会终止函数，并且只能返回一个值（但也可以是一个数组）</p>
+<h3 id="arguments">arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h3>
+<p>当我们不确定有多少个参数的时候，可以用arguments来获取。arguments实际上是所有函数都有的一个内置对象（也<u>只有函数</u>才有这个对象），存储了所有传递过来的实参。</p>
+<p>arguments的展示形式是伪数组，具有以下特点：</p>
+<ul>
+<li>
+<p>具有length属性</p>
+</li>
+<li>
+<p>按索引存储数据</p>
+</li>
+<li>
+<p>不具有push、pop等方法</p>
+</li>
+</ul>
+<p>例：找出任意个数的最大值。</p>
+<pre><code class="language-js">function getMax() {
+    var max = arguments[0];
+    for (var i = 1; i &lt; arguments.length; i++)
+        //因为已经把max设为参数的第一个了，所以遍历的时候从第二个开始。
+        if (arguments[i] &gt;= max) {
+            max = arguments[i];
+        }
+    return max;
+}
+
+console.log(getMax(4,54,667,293,375,29)); // 调用
+</code></pre>
+<p>例：用函数翻转数组</p>
+<pre><code class="language-js">function reverse(arr) {
+    var newArr = [];
+    for (var i = arr.length - 1; i &gt;= 0; i--){
+        // 这里是从倒数第一个值开始往前走，所以用 i--；
+        newArr[newArr.length] = arr[i];
+    }
+    return newArr;
+}
+
+var arr1 = reverse([1, 3, 5, 7, 9]);
+console.log(arr1);
+</code></pre>
+<h3 id="_28">函数的另一种声明方式：表达式法<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>声明时：<code>var 变量名 = function ( ){ 需要封装的代码 };</code></p>
+<p>调用时：<code>变量名( );</code></p>
+<p>这种声明方式和一般声明变量的方式差不多。函数表达式也可以传递参数。</p>
+<h3 id="_29">作用域<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<p>指的是代码名（变量）起作用的范围，分为全局作用域和局部作用域。</p>
+<ul>
+<li>
+<p>全局作用域：整个Script标签内，或者一个单独的js文件内。</p>
+</li>
+<li>
+<p>局部作用域：只在函数内部起作用，也叫函数作用域。</p>
+</li>
+</ul>
+<p>根据作用域不同，可以把变量分为全局变量和局部变量。</p>
+<ul>
+<li>注意：如果在函数内部，没有声明，直接赋值，该变量会被视为全局变量。</li>
+</ul>
+<h2 id="letconstai">let和const（来自AI）<a class="headerlink" href="#letconstai" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>原本的课程里没有，所以在这里补充。</p>
+</blockquote>
+<p><code>let</code> 和 <code>const</code> 是 ES6（2015年）新增的变量声明方式，用于解决传统 <code>var</code> 存在的作用域混乱、变量提升等问题，是现代 JavaScript 开发的基础。下面我们来详细对比它们的特性和使用场景：</p>
+<h3 id="let"><code>let</code>：用于声明可修改的变量<a class="headerlink" href="#let" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>块级作用域</strong>：只在 <code>{ }</code> 包裹的代码块（如 <code>if</code>、<code>for</code>、函数体等）内有效，外部无法访问。</li>
+</ul>
+<p><code>javascript
+  if (true) {
+  let a = 10;
+  console.log(a); // 10（块内可访问）
+  }
+  console.log(a); // 报错：a is not defined（块外不可访问）</code></p>
+<ul>
+<li><strong>不存在变量提升</strong>：必须先声明后使用，否则会报错（<code>var</code> 会提升到作用域顶部，值为 <code>undefined</code>）。</li>
+</ul>
+<p><code>javascript
+  console.log(b); // 报错：Cannot access 'b' before initialization
+  let b = 20;</code></p>
+<ul>
+<li><strong>不允许重复声明</strong>：同一作用域内不能重复声明同名变量（包括 <code>var</code> 声明的变量）。</li>
+</ul>
+<p><code>javascript
+  let c = 30;
+  let c = 40; // 报错：Identifier 'c' has already been declared
+  var d = 50;
+  let d = 60; // 同样报错</code></p>
+<ul>
+<li><strong>暂存死区（TDZ）</strong>：在变量声明前的区域，变量处于“暂存死区”，无法被访问（避免了 <code>var</code> 的意外赋值问题）。</li>
+</ul>
+<h3 id="const"><code>const</code>：用于声明不可修改的常量<a class="headerlink" href="#const" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>声明时必须赋值</strong>：否则会报错（<code>let</code> 可以先声明后赋值）。</li>
+</ul>
+<p><code>javascript
+  const e; // 报错：Missing initializer in const declaration
+  const e = 70; // 正确</code></p>
+<ul>
+<li><strong>块级作用域</strong>：和 <code>let</code> 一样，只在当前代码块内有效。</li>
+</ul>
+<p><code>javascript
+  {
+  const f = 80;
+  console.log(f); // 80
+  }
+  console.log(f); // 报错：f is not defined</code></p>
+<ul>
+<li>
+<p><strong>不允许重复声明</strong>：规则和 <code>let</code> 一致。</p>
+</li>
+<li>
+<p><strong>值不可修改？（注意！）</strong>：</p>
+</li>
+</ul>
+<p>对于 <strong>基本数据类型</strong>（数字、字符串、布尔值等）：值确实不可修改，强行修改会报错。</p>
+<p><code>javascript
+  const g = 90;
+  g = 100; // 报错：Assignment to constant variable</code></p>
+<p>对于 <strong>引用数据类型</strong>（对象、数组等）：变量存储的是“引用地址”，地址不可改，但对象/数组的 <strong>内部属性可以修改</strong>。</p>
+<p><code>javascript
+  const obj = { name: "张三" };
+  obj.name = "李四"; // 允许：修改对象内部属性
+  console.log(obj); // { name: "李四" }
+  obj = { age: 20 }; // 报错：试图修改引用地址</code></p>
+<h3 id="letconst-var"><code>let</code>、<code>const</code> 与 <code>var</code> 的对比<a class="headerlink" href="#letconst-var" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th><code>var</code></th>
+<th><code>let</code></th>
+<th><code>const</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作用域</td>
+<td>函数级/全局</td>
+<td>块级</td>
+<td>块级</td>
+</tr>
+<tr>
+<td>变量提升</td>
+<td>有（提升到作用域顶）</td>
+<td>无（暂存死区）</td>
+<td>无（暂存死区）</td>
+</tr>
+<tr>
+<td>重复声明</td>
+<td>允许</td>
+<td>不允许</td>
+<td>不允许</td>
+</tr>
+<tr>
+<td>初始赋值</td>
+<td>可选</td>
+<td>可选</td>
+<td>必须</td>
+</tr>
+<tr>
+<td>值可修改</td>
+<td>允许</td>
+<td>允许</td>
+<td>基本类型不可改，引用类型内部可改</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>优先使用 <code>const</code></strong>：如果变量的值不需要修改（如配置项、固定常量），用 <code>const</code> 可以避免意外修改，代码更安全。</p>
+</li>
+<li>
+<p><strong>其次使用 <code>let</code></strong>：当变量需要被重新赋值时（如循环计数器、条件判断的临时变量），再用 <code>let</code>。</p>
+</li>
+<li>
+<p><strong>避免使用 <code>var</code></strong>：<code>var</code> 的作用域和提升特性容易导致 bugs（如循环中闭包问题），现代开发中已基本被 <code>let</code>/<code>const</code> 替代。
+  示例：</p>
+</li>
+</ul>
+<p><code>javascript
+  // 推荐写法
+  const PI = 3.14159; // 常量用 const
+  let count = 0; // 会被修改的变量用 let
+  for (let i = 0; i &lt; 5; i++) { // 循环变量用 let（块级作用域，每次循环都是新变量）
+  count += i;
+  }</code></p>
+<p>掌握 <code>let</code> 和 <code>const</code> 是理解 ES6 及后续版本的基础，也是现代前端框架（如 Vue、React）开发中的必备知识。</p>
+<h2 id="_30">作用域链<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<p>如果发生了函数嵌套的情况：</p>
+<pre><code class="language-js">function f() {
+    var num = 10;
+    function fn() {
+        console.log(num);
+    }
+
+}
+</code></pre>
+<p>内部函数可以访问外部函数的变量，用链式查找决定哪些数据能被内部函数访问，称为作用域链。</p>
+<h2 id="_31">预解析<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>JS运行时分为两步：预解析、代码执行。</p>
+</li>
+<li>
+<p>预解析时，JS引擎会把代码里所有的<code>var</code>和<code>function</code>都提升到当前作用域的最前面。</p>
+</li>
+<li>
+<p>执行时按照代码书写的顺序从上到下执行。</p>
+</li>
+<li>
+<p>变量预解析/变量提升：把所有变量<u>声明</u>提升到作用域最上面（不提升赋值操作）</p>
+</li>
+<li>
+<p>函数预解析/提升：把所有函数<u>声明</u>提升到作用域最上面（不调用函数）</p>
+</li>
+</ul>
+<h2 id="ai">箭头函数 =&gt; (来自AI)<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<p>箭头函数（<code>=&gt;</code>）是 ES6 新增的函数语法，与普通函数（<code>function</code> 声明）在语法和行为上有显著区别，核心差异体现在 <strong><code>this</code> 指向、语法简洁性、使用场景</strong> 等方面。下面详细对比：</p>
+<h3 id="_32">语法差异<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<h4 id="_33">普通函数<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h4>
+<ul>
+<li>必须用 <code>function</code> 关键字声明，可包含完整的函数体（<code>{ }</code> 和 <code>return</code>）</li>
+</ul>
+<p><code>javascript
+  // 函数声明
+  function add(a, b) {
+  return a + b;
+  }
+  // 函数表达式
+  const multiply = function(a, b) {
+  return a * b;
+  };sd</code></p>
+<h4 id="_34">箭头函数<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>用 <code>=&gt;</code> 替代 <code>function</code> 关键字，语法更简洁</p>
+</li>
+<li>
+<p>单参数可省略括号 <code>()</code>，单语句返回可省略 <code>{ }</code> 和 <code>return</code>（隐式返回）</p>
+</li>
+</ul>
+<p><code>javascript
+  // 基础形式（多参数）
+  const add = (a, b) =&gt; {
+  return a + b;
+  };
+  // 简化：单语句返回可省略 { } 和 return
+  const add = (a, b) =&gt; a + b;
+  // 简化：单参数可省略 ()
+  const double = num =&gt; num * 2;
+  // 特殊：返回对象时需用 () 包裹（避免 { } 被解析为代码块）
+  const getUser = () =&gt; ({ name: "张三", age: 20 });</code></p>
+<h3 id="this">核心差异：<code>this</code> 指向<a class="headerlink" href="#this" title="Permanent link">&para;</a></h3>
+<p>这是箭头函数与普通函数最关键的区别，直接影响它们的使用场景。</p>
+<h4 id="_35">普通函数<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>this</code> 指向 <strong>调用时的上下文对象</strong>，取决于“谁调用它”：</p>
+</li>
+<li>
+<p>全局调用时，<code>this</code> 指向全局对象（浏览器中是 <code>window</code>，Node.js 中是 <code>global</code>）</p>
+</li>
+<li>
+<p>对象方法调用时，<code>this</code> 指向该对象</p>
+</li>
+<li>
+<p>事件绑定中，<code>this</code> 指向触发事件的元素</p>
+</li>
+<li>
+<p>用 <code>call</code>/<code>apply</code>/<code>bind</code> 可修改 <code>this</code> 指向</p>
+<p><code>javascript
+const obj = {
+name: "张三",
+sayHi: function() {
+console.log(this.name); // "张三"（this 指向 obj）
+}
+};
+obj.sayHi();
+// 全局调用时 this 指向 window
+const globalFunc = obj.sayHi;
+globalFunc(); // undefined（浏览器中 window.name 默认为空）</code></p>
+</li>
+</ul>
+<h4 id="_36">箭头函数<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>没有自己的 <code>this</code></strong>，<code>this</code> 继承自 <strong>声明时的父级作用域</strong>（“词法作用域 <code>this</code>”）</p>
+</li>
+<li>
+<p>无法通过 <code>call</code>/<code>apply</code>/<code>bind</code> 修改 <code>this</code> 指向（参数会被忽略）</p>
+</li>
+</ul>
+<p><code>javascript
+  const obj = {
+  name: "张三",
+  sayHi: () =&gt; {
+  console.log(this.name); // undefined（this 继承自父级，即全局 window）
+  },
+  delaySayHi: function() {
+  // 普通函数中的 this 指向 obj
+  setTimeout(() =&gt; {
+  // 箭头函数的 this 继承自 delaySayHi 的 this（即 obj）
+  console.log(this.name); // "张三"
+  }, 1000);
+  }
+  };
+  obj.sayHi(); // undefined
+  obj.delaySayHi(); // 1秒后输出 "张三"</code></p>
+<p><strong>经典场景</strong>：箭头函数常用于回调函数（如 <code>setTimeout</code>、数组方法），避免普通函数中 <code>this</code> 指向混乱的问题。</p>
+<h3 id="_37">其他差异<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>普通函数</th>
+<th>箭头函数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>arguments</code> 对象</td>
+<td>有（包含所有参数的类数组）</td>
+<td>无（需用剩余参数 <code>...args</code>）</td>
+</tr>
+<tr>
+<td>构造函数</td>
+<td>可作为构造函数（<code>new Func()</code>）</td>
+<td>不可（会报错）</td>
+</tr>
+<tr>
+<td>原型 <code>prototype</code></td>
+<td>有原型属性</td>
+<td>无原型属性</td>
+</tr>
+<tr>
+<td>Generator 函数</td>
+<td>可使用 <code>function*</code> 声明</td>
+<td>不可（不支持 <code>yield</code>）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="arguments_1">示例：<code>arguments</code> 与剩余参数<a class="headerlink" href="#arguments_1" title="Permanent link">&para;</a></h4>
+<pre><code class="language-javascript">// 普通函数：用 arguments 获取参数
+function sum() {
+let total = 0;
+for (let i = 0; i &lt; arguments.length; i++) {
+total += arguments[i];
+}
+return total;
+}
+sum(1, 2, 3); // 6
+// 箭头函数：用 ...args 剩余参数替代 arguments
+const sum = (...args) =&gt; {
+return args.reduce((total, num) =&gt; total + num, 0);
+};
+sum(1, 2, 3); // 6
+</code></pre>
+<h3 id="_38">使用场景建议<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<h4 id="_39">优先用箭头函数的场景<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>回调函数</strong>：如 <code>setTimeout</code>、<code>map</code>、<code>filter</code> 等，避免 <code>this</code> 指向问题</li>
+</ul>
+<p><code>javascript
+  const numbers = [1, 2, 3];
+  const doubled = numbers.map(num =&gt; num * 2); // 简洁且无 this 困扰</code></p>
+<ul>
+<li>
+<p><strong>简短逻辑函数</strong>：单语句返回的简单函数（如工具函数）</p>
+</li>
+<li>
+<p><strong>需要继承父级 <code>this</code> 的场景</strong>：如对象方法中的嵌套函数（见上文 <code>delaySayHi</code> 示例）</p>
+</li>
+</ul>
+<h4 id="_40">优先用普通函数的场景<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>对象方法</strong>：因为箭头函数的 <code>this</code> 不指向当前对象</li>
+</ul>
+<p><code>javascript
+  const obj = {
+  value: 10,
+  getValue: function() { // 必须用普通函数
+  return this.value;
+  }
+  };</code></p>
+<ul>
+<li><strong>构造函数</strong>：需要通过 <code>new</code> 创建实例时</li>
+</ul>
+<p><code>javascript
+  function User(name) {
+  this.name = name; // 普通函数可作为构造函数
+  }
+  const user = new User("张三");</code></p>
+<ul>
+<li><strong>需要 <code>arguments</code> 对象或 <code>prototype</code> 时</strong></li>
+</ul>
+<h3 id="_41">总结<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<p>箭头函数的设计初衷是 <strong>简化语法</strong> 并 <strong>解决普通函数中 <code>this</code> 指向混乱</strong> 的问题，但它并非普通函数的替代品。实际开发中需根据场景选择：需要动态 <code>this</code> 时用普通函数，需要简洁语法或固定 <code>this</code> 时用箭头函数。理解 <code>this</code> 指向的差异是掌握两者的关键。</p>
+<h2 id="object">对象（Object）<a class="headerlink" href="#object" title="Permanent link">&para;</a></h2>
+<p>在JS中，对象是一组无需的相关属性和方法的集合，所有事物都可以是对象，例如字符串、数值、数组、函数……</p>
+<ul>
+<li>
+<p>属性（事物的<u>特征</u>），常用名词表示。</p>
+</li>
+<li>
+<p>方法（事物的<u>行为</u>），常用动词表示。</p>
+</li>
+</ul>
+<h3 id="_42">创建对象的方式<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h3>
+<h4 id="_43">用字面量创建<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>const obj = { }</code> ←创建了一个空对象。</li>
+</ul>
+<pre><code class="language-js">const obj = {
+    name: 'Riko',
+    age: 23,
+    sex: 'female',
+    sayHi: function () {
+        console.log('hi');
+    }
+}
+</code></pre>
+<ul>
+<li>
+<p>里面的属性或方法采用键值对的形式（类似于python的dict）</p>
+</li>
+<li>
+<p>多个属性/方法之间用逗号隔开。</p>
+</li>
+<li>
+<p>方法后面是一个匿名函数。</p>
+</li>
+<li>
+<p>调用对象的属性：</p>
+</li>
+<li>
+<p>对象名.属性名<code>console.log(obj.name);</code></p>
+</li>
+<li>
+<p>对象名[‘属性名’] <code>console.log(obj['age']);</code></p>
+</li>
+<li>
+<p>调用对象的方法： 对象名.方法名(); <code>obj.sayHi();</code></p>
+</li>
+<li>
+<p>这个 “.” 可视为 ”的“</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>变量</th>
+<th>属性</th>
+<th>函数</th>
+<th>方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性质</td>
+<td>是某个值</td>
+<td>是某个值</td>
+<td>做某件事</td>
+<td>做某件事</td>
+</tr>
+<tr>
+<td>声明</td>
+<td>单独声明赋值</td>
+<td>不需要单独声明</td>
+<td>单独声明</td>
+<td>对象中声明</td>
+</tr>
+<tr>
+<td>使用</td>
+<td>单独使用</td>
+<td>对象中使用</td>
+<td>单独使用</td>
+<td>对象中使用</td>
+</tr>
+</tbody>
+</table>
+<h4 id="new-object">用new Object创建对象<a class="headerlink" href="#new-object" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>（与new Array原理一致）：<code>var obj = new Object();</code>←创建了一个空对象。</p>
+</li>
+<li>
+<p><code>obj.name = 'Riko' ;</code>创建了一个属性</p>
+</li>
+<li>
+<p><code>obj.sayHi =function( ){ }</code>创建了一个方法。</p>
+</li>
+</ul>
+<h4 id="_44">构造函数创建对象<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h4>
+<pre><code class="language-js">// 创建
+function 构造函数() {
+    this.属性 = 值;
+    this.方法 = function(){}
+// 不需要return
+}
+// 调用
+new 构造函数();
+// 调用函数返回的是一个对象
+</code></pre>
+<p>具体的例子：</p>
+<pre><code class="language-js">function Idol(uname,age,sex) {
+    this.name = uname;
+    this.age = age;
+    this.sex = sex;
+    this.sing = function(song){
+         console.log(song);
+ }
+}
+var ty = new Idol('taeyeon',36,'female');
+console.log(ty.name); // taeyeon
+ty.sing('I'); // I
+</code></pre>
+<ul>
+<li>
+<p>利用构造函数创建对象的过程也称为对象的实例化。</p>
+</li>
+<li>
+<p>用构造函数创建对象时一定要用new</p>
+</li>
+</ul>
+<h4 id="_45">遍历对象的属性<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h4>
+<p>用 <code>for ( 变量 in 对象 ){ }</code> 遍历对象。</p>
+<pre><code class="language-js">const yn = {
+    name: 'yoona',
+    age: 35,
+    sex: 'female'
+}
+
+for (var k in yn) {  // 这里一般用k或者key
+    console.log(yn[k]);
+}
+</code></pre>
+<h2 id="_46">内置对象<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>内置对象是JS自带的一些对象，提供了很多基本的、必要的功能（属性和方法）</p>
+</li>
+<li>
+<p>常用的有Math、Date、Array、String……</p>
+</li>
+<li>
+<p>通过查文档学习内置对象：<a href="https://developer.mozilla.org/zh-CN/">MDN Web Docs</a></p>
+</li>
+<li>
+<p>如何学习对象中的方法：查阅方法的功能 → 查看参数的类型和意义 → 查看返回值的类型和意义 → 通过demo进行测试</p>
+</li>
+</ul>
+<h3 id="math">Math对象<a class="headerlink" href="#math" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>使用Math对象不需要new，直接用里面的属性和方法即可。</p>
+</li>
+<li>
+<p>属性例子：圆周率 <code>Math.PI</code></p>
+</li>
+<li>
+<p>最大值：<code>Math.max( );</code> 最小值：<code>Math.min( );</code> 括号内输入一组数值。</p>
+</li>
+</ul>
+<h4 id="_47">案例：封装自己的数学对象<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h4>
+<pre><code class="language-js">const myMath = {  // 里面封装了一个属性、两个方法
+    PI: 3.1415926,
+    max: function () {
+        let max = arguments[0];
+        for (let i = 1; i &lt; arguments.length; i++){
+            if (arguments[i] &gt; max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+    },
+    min: function() {
+        let min = arguments[0];
+        for (let i = 1; i &lt; arguments.length; i++){
+            if (arguments[i] &lt; min) {
+                min = arguments[i];
+            }
+        }
+        return min;
+    },
+}
+</code></pre>
+<h4 id="math_1">Math对象中其他常用的方法：<a class="headerlink" href="#math_1" title="Permanent link">&para;</a></h4>
+<pre><code class="language-js">Math.floor(); // 向下取整
+Math.ceil(); // 向上取整
+Math.round(); // 四舍五入
+Math.abs(); // 绝对值，如果输入了字符串，会进行隐式转换
+Math.random(); // 随机返回一个0~1之间的小数
+</code></pre>
+<p>关于random：</p>
+<ul>
+<li>
+<p>括号里不需要填参数</p>
+</li>
+<li>
+<p>取值范围是[0,1)</p>
+</li>
+<li>
+<p>如果需要得到两个数之间的随机整数（并且包含这两个整数）</p>
+</li>
+</ul>
+<p><code>Math.floor(Math.random() * (max - min + 1)) + min;</code></p>
+<ul>
+<li>这个很有用，可以封装起来</li>
+</ul>
+<h3 id="date">Date对象<a class="headerlink" href="#date" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>使用Date对象需要用new</p>
+</li>
+<li>
+<p>参数常用的写法：数字型或字符串型</p>
+</li>
+</ul>
+<pre><code class="language-js">const date = new Date();
+console.log(date); // 2025-09-10T06:33:43.544Z
+</code></pre>
+<h4 id="_48">格式化日期<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h4>
+<p>通过以下方法可以单独获取日期指定的部分。</p>
+<ul>
+<li>
+<p><code>getFullYear();</code> 获取当年</p>
+</li>
+<li>
+<p><code>getMonth();</code>获取当月（0~11，如果需要真实的月份，要在后面+1）</p>
+</li>
+<li>
+<p><code>getDate();</code>获取当天日期</p>
+</li>
+<li>
+<p><code>getDay();</code>获取星期几（0~6，周日到周六）</p>
+</li>
+<li>
+<p><code>getHours();</code>获取小时，<code>getMinutes();</code>获取分钟，<code>getSeconds();</code>获取秒钟。</p>
+</li>
+<li>
+<p>输出时可以这样写：</p>
+</li>
+</ul>
+<pre><code class="language-js">const y = date.getFullYear();
+const m = date.getMonth() + 1;
+const d = date.getDate();
+console.log('今天是' + y + '年' + m + '月' + d + '日');
+</code></pre>
+<ul>
+<li><code>getTime();</code> 或者 <code>valueOf();</code> 或者<code>Date.now();</code>获取从1970.1.1到现在的毫秒数（时间戳）</li>
+</ul>
+<h4 id="_49">倒计时<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>思路：输入的时间减去现在的时间就是倒计时</p>
+</li>
+<li>
+<p>用时间戳来做，得到毫秒数倒计时</p>
+</li>
+<li>
+<p>把毫秒转换为天数、时、分、秒</p>
+</li>
+</ul>
+<pre><code class="language-js">function countDown(time) {
+    const now = +new Date();
+    const input = +new Date(time);
+    const times = (input - now) / 1000;
+    const d = parseInt(times / 60 / 60 / 24);
+    const h = parseInt(times / 60 / 60 % 24);
+    const m = parseInt(times / 60 % 60);
+    const s = parseInt(times % 60);
+    return d + '天' + h + '小时' + m + '分钟' + s + '秒';
+}
+console.log(countDown('2028-3-1 18:00'));
+</code></pre>
+<h3 id="_50">数组对象<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>创建数组的两种方式 <code>const arr = [];</code> 或者 <code>const arr = new Array();</code></p>
+</li>
+<li>
+<p><code>instanceof</code>运算符，可以用来检测是否为数组：</p>
+</li>
+</ul>
+<p><code>console.log(arr instanceof Array);</code> 返回true或false</p>
+<ul>
+<li><code>Array.isArray();</code> 可以用来检测括号里的内容是否为数组：</li>
+</ul>
+<p><code>console.log(Array.isArray(arr));</code> 返回true或false</p>
+<h4 id="_51">添加或删除数组元素<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h4>
+<ol>
+<li><code>push()</code> 在数组的末尾增加元素</li>
+</ol>
+<p><code>arr.push(3);</code> 添加一个</p>
+<p><code>arr.push(4, 5, 6, 7);</code> 添加多个</p>
+<p>如果<code>console.log(arr.push(3));</code>这样操作，返回新数组的长度</p>
+<ol>
+<li><code>upshift()</code> 在数组的开头增加元素</li>
+</ol>
+<p><code>arr.upshift(3);</code> 添加一个</p>
+<p><code>arr.upshift(4, 5, 6, 7);</code> 添加多个</p>
+<p>如果<code>console.log(arr.upshift(3));</code>这样操作，返回新数组的长度</p>
+<ol>
+<li><code>pop()</code> 删除数组的最后一个元素</li>
+</ol>
+<p><code>arr.pop();</code></p>
+<p>不用填参数，执行过后返回的是删掉的那个元素</p>
+<ol>
+<li><code>shift()</code> 删除数组的第一个元素</li>
+</ol>
+<p><code>arr.shift();</code></p>
+<p>不用填参数，执行过后返回的是删掉的那个元素</p>
+<h4 id="_52">数组排序<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>翻转数组： <code>arr.reverse();</code></p>
+</li>
+<li>
+<p>排序：<code>arr.sort();</code></p>
+</li>
+</ol>
+<p>如果只用sort排序，而数组中有各种不同位数的数值，则无法准确做到升序或降序，但在sort()中插入function，可以控制升序/降序。</p>
+<p>```js
+   const arr1 = [1, 2, 3];
+   arr1.reverse(); // 翻转数组
+   console.log(arr1);</p>
+<p>const arr2 = [1, 34, 2, 8, 67, 25];
+   arr2.sort(function (a, b) {
+     return a - b;// 升序
+     return b - a;// 降序
+   })
+   ```</p>
+<h4 id="_53">数组索引<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>indexOf();</code> 在数组中查找给定元素的第一个索引</li>
+</ul>
+<p>如果存在则返回索引号，如果不存在则返回-1</p>
+<ul>
+<li><code>lastIndexOf();</code> 在数组中的最后一个索引（从后往前查找）</li>
+</ul>
+<p>如果存在则返回索引号，如果不存在则返回-1</p>
+<p>案例：</p>
+<pre><code class="language-js">// 数组去重
+// 原理：遍历旧数组，用旧数组元素查询新数组
+// 用indexOf判断元素在新数组中是否存在
+
+function unique(arr) {
+    const newArr = [];
+    for (let i = 0; i &lt; arr.length; i++){
+        if (newArr.indexOf(arr[i]) === -1) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+</code></pre>
+<h4 id="_54">数组转字符串<a class="headerlink" href="#_54" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>toString()</code></p>
+</li>
+<li>
+<p><code>join()</code> 括号里可以填写想要的分隔符（默认逗号）</p>
+</li>
+</ul>
+<h3 id="_55">字符串对象<a class="headerlink" href="#_55" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>基本包装类型：包括String、Number、Boolean三种，是把简单数据类型包装成为复杂数据类型，使其有属性和方法。</p>
+</li>
+<li>
+<p>字符串所有的方法都不会修改字符串本身，操作完成后会返回新的字符串，旧的也没有消失。</p>
+</li>
+<li>
+<p><code>indexOf();</code> 也可以用于字符串。</p>
+</li>
+<li>
+<p><code>indexOf('要查找的字符串',起始查找位置);</code> 可以从指定位置开始查找。</p>
+</li>
+</ul>
+<pre><code class="language-js">// 查找字符串&quot;arcaea&quot;中所有的a出现的位置和次数
+
+const str = 'arcaea'
+let index = str.indexOf('a');
+let num = 0;
+while(index !== -1){
+    console.log(index);
+    index = str.indexOf('a', index + 1);
+    num++;
+}
+console.log('a出现的次数是' + num);
+</code></pre>
+<h4 id="_56">根据位置返回字符<a class="headerlink" href="#_56" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>charAt(index)</code> 根据索引号返回字符</p>
+</li>
+<li>
+<p><code>charCodeAt(index)</code> 根据索引号返回字符的ASCII码</p>
+</li>
+<li>
+<p><code>str[index]</code> 获取指定位置的字符</p>
+</li>
+</ul>
+<pre><code class="language-js">// 案例：判断一个字符串里出现次数最多的字符
+// 并统计次数
+// 1.用charAt遍历字符串
+// 2.把每个字符存储给对象
+// 3.遍历对象
+const str1 = 'arcaea';
+const o = {};
+for (let i = 0; i &lt; str1.length; i++){
+    const chars = str1.charAt(i);
+    if (o[chars]) {
+        o[chars]++;
+    } else {
+        o[chars] = 1;
+    }
+}
+console.log(o);
+
+let max = 0
+let ch = ''
+for (var k in o) {
+    if (o[k] &gt; max) {
+        max = o[k];
+        ch = k;
+    }
+}
+console.log(ch + ',' + max);
+</code></pre>
+<h4 id="_57">字符串操作方法<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>concat('字符串1','字符串2'……)</code>拼接字符串，等效于+</p>
+</li>
+<li>
+<p><code>substr(start,length)</code> 从start（索引号）位置开始，length是取出的个数。</p>
+</li>
+<li>
+<p><code>slice(start,end)</code> 从start开始截取到end（不包括end）</p>
+</li>
+<li>
+<p><code>substring(start,end)</code> 从start开始截取到end（不包括end）但是不接受负值。</p>
+</li>
+<li>
+<p><code>replace('a','b')</code> 替换字符，把a替换成b</p>
+</li>
+<li>
+<p><code>split('分隔符')</code> 把字符串转换为数组</p>
+</li>
+<li>
+<p><code>toUpperCase()</code> <code>toLowerCase</code> 转换大小写</p>
+</li>
+</ul>
+<h2 id="_58">数据类型<a class="headerlink" href="#_58" title="Permanent link">&para;</a></h2>
+<h3 id="_59">简单类型与复杂类型<a class="headerlink" href="#_59" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>简单类型（值类型）：在存储时存储的是值本身，例如string、number、boolean、undefined</p>
+</li>
+<li>
+<p>复杂类型（引用类型）：在存储时只是存储了地址；可以通过new关键字新建，例如object、array、date</p>
+</li>
+</ul>
+<h3 id="_60">堆和栈（数据结构中的概念）<a class="headerlink" href="#_60" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>栈：由操作系统自动分配释放存放函数的参数值、局部变量的值等。<u>简单数据类型存放到栈中。</u></p>
+</li>
+<li>
+<p>堆：存储复杂数据类型，由程序员分配释放，若程序员不释放，则由垃圾回收机制回收。<u>复杂数据类型存放到堆中。</u></p>
+</li>
+<li>
+<p>复杂类型变量的栈空间存放的是地址，而真正的对象存放在堆空间中。</p>
+</li>
+</ul>
+<h2 id="web-apis">Web APIs<a class="headerlink" href="#web-apis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Web APIs 是W3C组织的标准。</p>
+</li>
+<li>
+<p>该阶段主要学习DOM和BOM。</p>
+</li>
+<li>
+<p>制作页面交互功能，需要大量使用JS基础语法。</p>
+</li>
+</ul>
+<h3 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<p>全称为Application Programming Interface，应用程序编程接口，是一些预定义的函数，作用是提供了基于某软件或硬件<strong>不需要访问源码就能实现某种功能</strong>的能力。</p>
+<p>Web API是浏览器提供的一套API，包括操作浏览器的BOM和操作页面元素的DOM</p>
+<h2 id="dom">DOM<a class="headerlink" href="#dom" title="Permanent link">&para;</a></h2>
+<p>文档对象模型(Document Object Model)，是HTML或XML的标准编程接口。</p>
+<p>W3C已经定义了一系列DOM接口，通过它们可以改变网页的内容、结构、样式。</p>
+<ul>
+<li>
+<p>文档：用document表示。一个页面就是一个文档。</p>
+</li>
+<li>
+<p>元素：用element表示。页面中所有标签都是元素。</p>
+</li>
+<li>
+<p>节点：用node表示。网页中所有内容都是节点（包括标签、属性、文本、注释）</p>
+</li>
+<li>
+<p>DOM把以上内容都视为对象。</p>
+</li>
+</ul>
+<h3 id="_61">获取元素<a class="headerlink" href="#_61" title="Permanent link">&para;</a></h3>
+<p>有以下几种方式：</p>
+<ul>
+<li>
+<p>根据ID获取</p>
+</li>
+<li>
+<p>根据标签名获取</p>
+</li>
+<li>
+<p>通过HTML5新方法获取</p>
+</li>
+<li>
+<p>特殊元素获取</p>
+</li>
+</ul>
+<h4 id="id">根据ID获取元素<a class="headerlink" href="#id" title="Permanent link">&para;</a></h4>
+<p><code>document.getElementByID()</code> 返回一个匹配特定ID的元素对象</p>
+<p>如果在当前Document下没有找到，则会返回null。</p>
+<p>注意：Script必须写在元素的下面、参数必须是字符串（加引号）</p>
+<ul>
+<li>
+<p>用<code>console.log()</code> 会返回整个标签。</p>
+</li>
+<li>
+<p>用<code>console.dir()</code> 会返回元素对象名、属性和方法。</p>
+</li>
+</ul>
+<h4 id="_62">根据标签名获取元素<a class="headerlink" href="#_62" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>document.getElementsByTagName()</code>返回指定标签的元素对象的集合（数组）</li>
+</ul>
+<p>用<code>console.log()</code> 会返回数组，即使页面中没有要找的标签，也会返回一个空的数组。</p>
+<ul>
+<li><code>element.getElementsByTagName()</code> 返回某个特定元素内部所有指定标签的子元素</li>
+</ul>
+<h4 id="_63">根据类名获取元素（现在最常用这个）<a class="headerlink" href="#_63" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>getElementsByClassName()</code> 根据类名返回元素对象集合</p>
+</li>
+<li>
+<p><code>querySelector('选择器')</code> 根据指定选择器返回第一个元素对象（选择器的格式同CSS）</p>
+</li>
+<li>
+<p><code>querySelectorAll()</code> 返回指定选择器的所有元素对象集合</p>
+</li>
+</ul>
+<h4 id="bodyhtml">获取特殊元素body和html<a class="headerlink" href="#bodyhtml" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>document.body</code> 获取body</p>
+</li>
+<li>
+<p><code>document.documentElement</code> 获取html</p>
+</li>
+</ul>
+<h2 id="_64">事件<a class="headerlink" href="#_64" title="Permanent link">&para;</a></h2>
+<p>事件可以简单理解为”触发——响应机制“</p>
+<p>三要素：事件源、事件类型、事件处理程序</p>
+<ul>
+<li>
+<p>事件源：事件被触发的对象（谁）</p>
+</li>
+<li>
+<p>事件类型：如何触发（什么操作）</p>
+</li>
+<li>
+<p>事件处理程序：通过一个函数赋值的方式完成</p>
+</li>
+</ul>
+<pre><code class="language-js">// 1.获取事件源
+const div = document.querySelector('div');
+// 2.绑定事件，添加处理程序
+div.onclick = function(){
+    console.log('我被选中了');
+}
+</code></pre>
+<h3 id="_65">操作元素<a class="headerlink" href="#_65" title="Permanent link">&para;</a></h3>
+<h4 id="1">1.修改元素内容<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><code>element.innerText</code> 获取元素内容，但去除html标签</p>
+</li>
+<li>
+<p><code>element.innerHTML</code> 获取元素内容，包括标签</p>
+</li>
+<li>
+<p>这两个属性都是可读写的。</p>
+</li>
+</ul>
+<p>例子：</p>
+<pre><code class="language-html">&lt;div&gt;&lt;/div&gt; &lt;!--空盒子--&gt;
+</code></pre>
+<p>innerText：不识别标签且不保留空格和换行</p>
+<pre><code class="language-js">const div = document.querySelecter('div');
+div.innerText='&lt;strong&gt; DABC &lt;/strong&gt; ABC';
+// 这时候会发现&lt;strong&gt;这个标签没有识别到，被当成文本的一部分了
+// 而且strong标签也没有生效（文字没有加粗）
+</code></pre>
+<p>innerHTML：识别标签，且保留空格和换行</p>
+<pre><code class="language-js">const div = document.querySelecter('div');
+div.innerHTML='&lt;strong&gt; DABC &lt;/strong&gt; ABC';
+// 这样strong标签会被识别
+</code></pre>
+<h4 id="2">2.修改元素属性<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<p>例如src、href，再例如ID、title……</p>
+<p>操作的过程同上</p>
+<h4 id="3">3.表单元素操作<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<p>例如type、value、checked、selected、disabled……</p>
+<p>表单中的文字内容无法通过inner修改，但可以用value</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+    
+  </body>
+</html>

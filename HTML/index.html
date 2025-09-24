@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../note250822/">
+        <link rel="prev" href="../about/">
       
       
-        <link rel="next" href="../blog250801/">
+        <link rel="next" href="../CSS/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>250821 前端基础笔记1 - Riko_Blog</title>
+        <title>HTML - Riko_Blog</title>
       
     
     
@@ -48,7 +48,9 @@
     
       <link rel="stylesheet" href="../css/style.css">
     
-      <link rel="stylesheet" href="../css/prism.css">
+      <link rel="stylesheet" href="../css/1.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#250821-1" class="md-skip">
+        <a href="#html" class="md-skip">
           跳转至
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              250821 前端基础笔记1
+              HTML
             
           </span>
         </div>
@@ -130,21 +132,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to dark" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
-      </label>
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
     
   
 </form>
@@ -197,6 +185,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -254,7 +254,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../note250915/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -278,7 +278,27 @@
           
   
   
-  技术博客
+  小项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../note2509102/" class="md-tabs__link">
+          
+  
+  
+  随想
 
         </a>
       </li>
@@ -312,7 +332,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Riko_Blog" class="md-nav__button md-logo" aria-label="Riko_Blog" data-md-component="logo">
       
@@ -321,6 +343,18 @@
     </a>
     Riko_Blog
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -418,466 +452,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250915/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250915
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250913%EF%BC%9F/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250913？杂七杂八
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250912/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250912 JS笔记
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250911/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250911
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note2509101/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    2509101
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note2509102/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note2509102
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250909/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250909
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250908/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250908
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250907/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250907
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250905/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250905
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250904/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250904 JS基础笔记5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250903/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250903 JS基础笔记4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250902/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250902 JS基础笔记3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250901/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250901 JS基础笔记2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250828/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250828 JS基础笔记1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250827/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    页面布局实战与心得
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250826/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250826 前端基础笔记5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250825/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250825 前端基础笔记4以及碎碎念
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250823/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250823 前端基础笔记3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250822/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250822 前端基础笔记2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -895,7 +469,7 @@
   
   
   <span class="md-ellipsis">
-    250821 前端基础笔记1
+    HTML
     
   </span>
   
@@ -908,7 +482,7 @@
   
   
   <span class="md-ellipsis">
-    250821 前端基础笔记1
+    HTML
     
   </span>
   
@@ -931,34 +505,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#web" class="md-nav__link">
+  <a href="#html_1" class="md-nav__link">
     <span class="md-ellipsis">
-      web标准
+      HTML基本标签和语法
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTML基本标签和语法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="HTML基本标签和语法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      标签小词典
+      常用标签小词典
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       表格标签
@@ -966,8 +530,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       列表标签
@@ -975,9 +539,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      表单
+    </span>
+  </a>
   
 </li>
       
@@ -985,6 +553,75 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JavaScript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vue3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vue3
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1023,7 +660,7 @@
   
   
   <span class="md-ellipsis">
-    技术博客
+    小项目
     
   </span>
   
@@ -1034,7 +671,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            技术博客
+            小项目
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1091,89 +728,106 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    随想
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            随想
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note2509102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025年的目标
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note250913/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#web" class="md-nav__link">
-    <span class="md-ellipsis">
-      web标准
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTML基本标签和语法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="HTML基本标签和语法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      标签小词典
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      表格标签
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      列表标签
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -1183,15 +837,12 @@
                   
 
 
+  
+  
 
-<h1 id="250821-1">250821 前端基础笔记1</h1>
-<h2 id="web">web标准</h2>
-<ul>
-<li>HTML → 结构</li>
-<li>CSS  → 外观</li>
-<li>JS   → 行为</li>
-</ul>
-<h2 id="html">HTML基本标签和语法</h2>
+
+<h1 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h1>
+<h2 id="html_1">HTML基本标签和语法<a class="headerlink" href="#html_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>大部分标签都是双标签</li>
 <li>最基本的骨架标签:</li>
@@ -1203,7 +854,7 @@
 <li>body（网页的主要内容）</li>
 </ul>
 <p>在vscode里写html，第一件事是输入一个感叹号，按tab，会自动生成骨架。</p>
-<h3 id="_1">标签小词典</h3>
+<h2 id="_1">常用标签小词典<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <pre><code class="language-html">&lt;h1&gt;这是标题&lt;/h1&gt;
 &lt;h6&gt;标题最多6级&lt;/h6&gt;
 &lt;p&gt;这是段落&lt;/p&gt;
@@ -1220,7 +871,7 @@
 &lt;a href=&quot;arcaea.apk&quot;&gt;这是下载链接&lt;/a&gt;
 &lt;!-- 这是注释 --&gt;
 </code></pre>
-<h3 id="_2">表格标签</h3>
+<h2 id="_2">表格标签<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>不用来布局，只用来展示数据。</p>
 <pre><code class="language-html">&lt;table&gt; &lt;!--定义表格--&gt;
   &lt;thead&gt; &lt;!--表头语义标签--&gt;
@@ -1240,23 +891,88 @@
 <li>表格属性包括align（对齐方式）、border（边框）、cellpadding（单元格内空白）、cellspacing（单元格间空白）、width（宽度）。这些属性会在CSS中用到。</li>
 <li>合并单元格属性：</li>
 <li>rowspan：跨行合并</li>
-<li>colspan：跨列合并 </li>
+<li>colspan：跨列合并</li>
 <li>这两个属性代码写在要合并的单元格中最左、最上的单元格里，写上要合并的数量。</li>
 <li>例如：</li>
 </ul>
 <pre><code class="language-html">&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
 </code></pre>
 <p>合并完记得把多余的单元格删掉。</p>
-<h3 id="_3">列表标签</h3>
-<ul>
-<li>无序列表</li>
-</ul>
+<h2 id="_3">列表标签<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">无序列表<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <pre><code class="language-html">&lt;ul&gt;
   &lt;li&gt;列表项1&lt;/li&gt;
   &lt;li&gt;列表项2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--ul里面只能放li，但是li里面可以放各种元素--&gt;
 </code></pre>
+<h3 id="_5">有序列表<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>做出来的效果</p>
+</li>
+<li>
+<p>就像这样</p>
+</li>
+</ol>
+<pre><code class="language-html"> &lt;h4&gt;Arcaea歌曲排行榜&lt;/h4&gt;
+ &lt;ol&gt;
+    &lt;li&gt;Grievous Lady&lt;/li&gt;
+    &lt;li&gt;Fracture Ray&lt;/li&gt;
+ &lt;/ol&gt;
+</code></pre>
+<p>ol里面也只能放li，但是li里面可以放各种元素。</p>
+<h3 id="_6">自定义列表<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>前面没有项目符号，也没有数字编号。</p>
+<pre><code class="language-html">&lt;dl&gt;
+    &lt;dt&gt;在这里输入&lt;/dt&gt;
+    &lt;dd&gt;列表内容1&lt;/dd&gt;
+    &lt;dd&gt;列表内容2&lt;/dd&gt;
+&lt;/dl&gt;    
+</code></pre>
+<p>dl里面只能放dt和dd。dl和dd里面可以放各种元素。</p>
+<h2 id="_7">表单<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>表单用于收集用户的信息。
+一个完整的表单通常由<strong>表单域</strong>、<strong>表单控件</strong>、<strong>提示信息</strong>组成。</p>
+<ul>
+<li><strong>form 表单域</strong> 用于确定表单的范围，它决定了要把哪些信息提交给服务器。</li>
+<li>action=“url地址” 用于指定接受数据的服务器地址。</li>
+<li>method=“提交方式” 分为get/post。</li>
+<li>name=“名称”</li>
+<li><strong>表单控件</strong></li>
+<li>input 输入<ul>
+<li>type=“button / checkbox / file / hidden / image / password / radio(单选) / reset / submit / text……” 决定了输入的类型</li>
+<li>name=“名称”，一组单选按钮必须得用相同的name</li>
+<li>value=“默认显示文字”，</li>
+<li>checked=“checked” 打开时默认选中</li>
+<li>maxlength=“最大字符长度”，正整数</li>
+</ul>
+</li>
+<li>select 下拉选择</li>
+<li>textarea 文本域</li>
+<li>提示信息</li>
+<li>label 常用于绑定表单元素：当用户点击label标签的内容时，会自动选中对应的表单元素。</li>
+</ul>
+<pre><code class="language-html">&lt;label for=&quot;username&quot;&gt;用户名&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;username&quot;&gt;
+</code></pre>
+<ul>
+<li>select 下拉表单</li>
+</ul>
+<pre><code class="language-html">&lt;select&gt;
+    &lt;option&gt;选项1&lt;/option&gt;
+    &lt;option&gt;选项2&lt;/option&gt;
+    &lt;option selected=&quot;selected&quot;&gt;……&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<p>在option中定义selected=“selected”，表示默认选中。</p>
+<ul>
+<li>textarea 用于定义多行文本</li>
+</ul>
+<pre><code class="language-html">&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot;&gt;
+    文本内容……
+&lt;/textarea&gt;
+</code></pre>
+<p>cols="每行的字符数" rows="行数"，实际开发中不常用。</p>
 
 
 
@@ -1305,12 +1021,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
-        <script src="../javascripts/prism.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
       
     
   </body>

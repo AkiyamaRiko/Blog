@@ -1,1 +1,37 @@
+h1 {
+    color: #000000;
+}
 
+h2 {
+    color: rgb(52, 76, 122);
+}
+
+h3 {
+    color: #1f1e33;
+    font-weight: 500;
+}
+
+h4 {
+    color: rgb(52, 76, 122);
+}
+
+.md-typeset h1 {
+    color: #333333;
+    font-weight: 500;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+}
+
+.md-typeset h3 {
+    font-weight: 450;
+}
+
+.md-typeset code {
+    background-color: var(--md-code-bg-color);
+    border-radius: .1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-size: .90em;
+}

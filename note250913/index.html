@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../note250823/">
+        <link rel="prev" href="../note2509102/">
       
-      
-        <link rel="next" href="../note250821/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>250822 前端基础笔记2 - Riko_Blog</title>
+        <title>杂七杂八 - Riko_Blog</title>
       
     
     
@@ -48,7 +46,9 @@
     
       <link rel="stylesheet" href="../css/style.css">
     
-      <link rel="stylesheet" href="../css/prism.css">
+      <link rel="stylesheet" href="../css/1.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#250822-2" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              250822 前端基础笔记2
+              杂七杂八
             
           </span>
         </div>
@@ -130,21 +130,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to dark" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
-      </label>
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
     
   
 </form>
@@ -198,6 +184,18 @@
       
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+      </div>
+    
   </nav>
   
     
@@ -248,13 +246,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../note250915/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../HTML/" class="md-tabs__link">
           
   
   
@@ -278,7 +274,29 @@
           
   
   
-  技术博客
+  小项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../note2509102/" class="md-tabs__link">
+          
+  
+  
+  随想
 
         </a>
       </li>
@@ -312,7 +330,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Riko_Blog" class="md-nav__button md-logo" aria-label="Riko_Blog" data-md-component="logo">
       
@@ -321,6 +341,18 @@
     </a>
     Riko_Blog
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AkiyamaRiko" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M216.3 158.4H137C97 147.9 6.5 150.6 6.5 233.2c0 30.1 15 51.2 35 61-25.1 23-37 33.8-37 49.2 0 11 4.5 21.1 17.9 26.8C8.1 383.6 0 393.3 0 411.6c0 32.1 28 50.8 101.6 50.8 70.8 0 111.8-26.4 111.8-73.2 0-58.7-45.2-56.5-151.6-63l13.4-21.6c27.3 7.6 118.7 10 118.7-67.9 0-18.7-7.7-31.7-15-41.1l37.4-2.8v-34.5zm-63.4 241.9c0 32.1-104.9 32.1-104.9 2.4 0-8.1 5.3-15 10.6-21.5 77.7 5.3 94.3 3.4 94.3 19.1m-50.8-134.6c-52.8 0-50.5-71.2 1.2-71.2 49.5 0 50.8 71.2-1.2 71.2m133.3 100.5v-32.1c26.7-3.7 27.2-2 27.2-11V203.6c0-8.5-2.1-7.4-27.2-16.3l4.5-32.9h84.2v168.7c0 6.5.4 7.3 6.5 8.1l20.7 2.8v32.1H235.4zm52.5-244.3c-23.2 0-36.6-13.4-36.6-36.6s13.4-35.8 36.6-35.8c23.6 0 37 12.6 37 35.8s-13.4 36.6-37 36.6M512 350.5c-17.5 8.5-43.1 16.3-66.3 16.3-48.4 0-66.7-19.5-66.7-65.5V194.8c0-5.4 1-4.1-31.7-4.1v-36.2c35.8-4.1 50-22 54.5-66.3h38.6c0 65.8-1.3 61.8 3.3 61.8H501v40.6h-60.6v97.1c0 6.9-4.9 51.4 60.6 26.8l11 35.8z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Riko的Github仓库
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -372,29 +404,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -407,7 +434,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             学习笔记
@@ -421,12 +448,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../note250915/" class="md-nav__link">
+      <a href="../HTML/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    note250915
+    HTML
     
   </span>
   
@@ -444,12 +471,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../note250913%EF%BC%9F/" class="md-nav__link">
+      <a href="../CSS/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    note250913？杂七杂八
+    CSS
     
   </span>
   
@@ -467,12 +494,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../note250912/" class="md-nav__link">
+      <a href="../JavaScript/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    250912 JS笔记
+    JavaScript
     
   </span>
   
@@ -490,472 +517,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../note250911/" class="md-nav__link">
+      <a href="../Vue3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    note250911
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note2509101/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    2509101
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note2509102/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note2509102
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250909/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250909
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250908/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250908
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250907/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250907
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250905/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    note250905
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250904/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250904 JS基础笔记5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250903/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250903 JS基础笔记4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250902/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250902 JS基础笔记3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250901/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250901 JS基础笔记2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250828/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250828 JS基础笔记1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250827/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    页面布局实战与心得
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250826/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250826 前端基础笔记5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250825/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250825 前端基础笔记4以及碎碎念
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250823/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250823 前端基础笔记3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    250822 前端基础笔记2
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    250822 前端基础笔记2
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      无序列表
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      自定义列表
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      表单
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../note250821/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    250821 前端基础笔记1
+    Vue3
     
   </span>
   
@@ -999,7 +566,7 @@
   
   
   <span class="md-ellipsis">
-    技术博客
+    小项目
     
   </span>
   
@@ -1010,7 +577,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            技术博客
+            小项目
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1067,18 +634,117 @@
   
 
     
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
+  
+  
+  <span class="md-ellipsis">
+    随想
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            随想
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../note2509102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025年的目标
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    杂七杂八
+    
+  </span>
+  
+
+      </a>
+      
+        
 
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
@@ -1094,27 +760,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      无序列表
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      自定义列表
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      表单
+      关于化妆
     </span>
   </a>
   
@@ -1123,9 +771,25 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
                   </div>
                 </div>
               </div>
+            
             
           
           
@@ -1135,54 +799,41 @@
                   
 
 
+  
+  
 
-<h1 id="250822-2">250822 前端基础笔记2</h1>
-<h3 id="_1">无序列表</h3>
-<p>1.做出来的效果
-2.就像这样</p>
-<pre><code class="language-html"> &lt;h4&gt;Arcaea歌曲排行榜&lt;/h4&gt;
- &lt;ol&gt;
-    &lt;li&gt;Grievous Lady&lt;/li&gt;
-    &lt;li&gt;Fracture Ray&lt;/li&gt;
- &lt;/ol&gt;
-</code></pre>
-<p>ol里面也只能放li，但是li里面可以放各种元素。</p>
-<h3 id="_2">自定义列表</h3>
-<p>前面没有项目符号，也没有数字编号。</p>
-<pre><code class="language-html">&lt;dl&gt;
-    &lt;dt&gt;在这里输入&lt;/dt&gt;
-    &lt;dd&gt;列表内容1&lt;/dd&gt;
-    &lt;dd&gt;列表内容2&lt;/dd&gt;
-&lt;/dl&gt;    
-</code></pre>
-<p>dl里面只能放dt和dd。dl和dd里面可以放各种元素。</p>
-<h3 id="_3">表单</h3>
-<p>表单用于收集用户的信息。
-一个完整的表单通常由<strong>表单域</strong>、<strong>表单控件</strong>、<strong>提示信息</strong>组成。</p>
-<ul>
-<li><strong>form 表单域</strong> 用于确定表单的范围，它决定了要把哪些信息提交给服务器。</li>
-<li>action=“url地址” 用于指定接受数据的服务器地址。</li>
-<li>method=“提交方式” 分为get/post。</li>
-<li>name=“名称”</li>
-<li><strong>表单控件</strong></li>
-<li>input 输入<ul>
-<li>type=“button / checkbox / file / hidden / image / password / radio(单选) / reset / submit / text……” 决定了输入的类型</li>
-<li>name=“名称”，一组单选按钮必须得用相同的name</li>
-<li>value=“默认显示文字”，</li>
-<li>checked=“checked” 打开时默认选中</li>
-<li>maxlength=“最大字符长度”，正整数</li>
-</ul>
-</li>
-<li>select 下拉选择</li>
-<li>textarea 文本域</li>
-<li>提示信息</li>
-<li>label 常用于绑定表单元素：当用户点击label标签的内容时，会自动选中对应的表单元素。</li>
-</ul>
-<pre><code class="language-html">&lt;label for=&quot;username&quot;&gt;用户名&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;username&quot;&gt;
-</code></pre>
+
+<h1 id="_1">杂七杂八<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>今天活太多了，没时间学……</p>
+<p>今天没带耳机，学不了咯……</p>
 </blockquote>
+<h2 id="_2">关于化妆<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>如何判断一个眼影盘的配色是否合理</strong>：首先它得有明确的色阶，这样画上去的时候才会有明显的素描关系。</p>
+</li>
+<li>
+<p><strong>挑选腮红、口红、彩妆：</strong> 或许可以先在PS里实验一下，在自然光环境下拍个自拍，看看自己肤色的色相范围。每个人都会有最合适的彩妆颜色（不包括整活的蓝色绿色那种），应该是肤色的色相 ± 某个值，皮肤越白，这个值越大。（黑皮应该也有另外的技巧，但是暂时没研究出来）</p>
+</li>
+<li>
+<p>关于冷暖肤色理论：看自己的肤色对应的色相在色环上距离蓝色远还是近。</p>
+</li>
+<li>
+<p>（我是不是应该去写一个计算颜色的小工具？）</p>
+</li>
+<li>
+<p><strong>为什么要化妆：</strong> 客体化？媚男？我根本不喜欢男的，媚啥男啊……</p>
+</li>
+<li>
+<p>化妆虽然是男权社会下的产物，但是它并不完全是坏的，它让人类意识到了面部的外观也是可以个性化修改的。其实无论男女都可以画，只不过因为男人们觉得自己处于优势地位，所以他们认为自己的外观无所谓（好像尤其是中国男人）</p>
+</li>
+<li>
+<p><strong>每个人，无论是男人还是女人，都应该有化妆或素颜的自由。</strong></p>
+</li>
+<li>
+<p>服美役是另外一码事，比如过度改造身体，让自己为了漂亮的外表而承受痛苦、或者给日常生活带来不便。</p>
+</li>
+</ul>
 
 
 
@@ -1231,12 +882,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
-        <script src="../javascripts/prism.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
       
     
   </body>
